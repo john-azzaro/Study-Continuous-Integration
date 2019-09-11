@@ -1,13 +1,13 @@
-# Greensock Animation API Study
+# Continuous Integration (CI) Study
 
 
 ## Study Contents:
 
-* [What is the Continuous Integration Study?](#)
-* [What is Continuous Integration (CI)?](#)
-* [What is Travis CI?](#)
-* [How do you use Travis CI?](#)
-* [What is Travis CLI?](#)
+* [What is the Continuous Integration Study?](#What-is-the-Continuous-Integration-Study)
+* [What is Continuous Integration (CI)?](#What-is-Continuous-Integration-(CI))
+* [What is Travis CI?](#What-is-Travis-CI)
+* [How do you use Travis CI?](#How-do-you-use-Travis-CI)
+* [What is Travis CLI?](#What-is-Travis-CLI)
 
 <br>
 
