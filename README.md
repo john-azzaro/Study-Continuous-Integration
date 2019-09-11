@@ -22,7 +22,7 @@ times a day.  When each integration is submitted to this shared repository, it i
 
 CI is envaluable to developers in that it can:
 1. *Solve problems quickly by detecting and locating errors.*
-2. *Spend more tim ebuilding features instead of fixing problems.* 
+2. *Spend more time building features instead of fixing problems.* 
 3. *Help developers frequently integrate code often to communictae betwene engineers and get feedback.* 
 4. *Make sure code is consistent.*
 5. *Help make code much more dependable with automated testing.* 
@@ -40,5 +40,30 @@ in conjunction with a Github account.
 <br>
 
 ## How do you use Travis CI?
+
+### STEP 0: Sign-up/Sign-in for Travis CI
+Note that you can sign-in using your Github account.
+
+### STEP 1: Select your repository and turn ON
+In ```travis-ci.org/account/respositories```, select the respository listed from your Github account.  There will be a switch next to the respository that you can turn on and off.
+Turn the respository on.
+
+### STEP 2: In your root project folder, create a ".travis.yml" file
+Simply create a ``` .travis.yml ``` file.
+
+### STEP 3: Inside your .travis.yml file, insert code
+Inside the file, insert the following code:
+```JavaScript
+    language: node_js
+    node_js: node
+```
+When you insert the code above, it tells Travis CI to treat the project as a node project.
+For example, ``` node_js: node ``` tells Travis CI to use the latest stable release for the test enviroment.
+
+### STEP 4: Commit the .travis.yml file to version control
+When you eventually push the file to your existing repository (and assuming you have turned the corresponding repository on Travis CI to "on"), this will automatically
+trigger a *build* on Travis CI.
+
+
 
 
