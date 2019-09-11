@@ -67,10 +67,11 @@ In the code below, we are doing two thing in the two lines code.  First, we are 
 ```
 
 ### STEP 4: Commit the .travis.yml file to version control
-When you eventually push the file to your existing repository (and assuming you have turned the corresponding repository on Travis CI to "on"), this will automatically
-trigger a *build* on Travis CI.
+When you eventually push the file to your existing repository (and assuming you have turned the corresponding repository on Travis CI to "on"), this will automatically trigger a *build* on Travis CI.  When you go to your project on travis-ci.org, you will either be running or waiting to run your test suite.
 ```
-    
+git add .
+git commit -m 'added ci file'
+git push origin master
 ```
 
 <br>
