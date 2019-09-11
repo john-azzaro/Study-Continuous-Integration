@@ -45,25 +45,33 @@ in conjunction with a Github account.
 ### STEP 0: Sign-up/Sign-in for Travis CI
 Note that you can sign-in using your Github account.
 
+
 ### STEP 1: Select your repository and turn ON
-In ```travis-ci.org/account/respositories```, select the respository listed from your Github account.  There will be a switch next to the respository that you can turn on and off.
+In your Travis.ci account, select the respository listed from your Github account.  There will be a switch next to the respository that you can turn on and off.
 Turn the respository on.
+```
+    travis-ci.org/account/respositories
+```
 
-### STEP 2: In your root project folder, create a ".travis.yml" file
-Simply create a ``` .travis.yml ``` file.
+### STEP 2: Create a .travis.yml file
+In your root project file, create a ".travis.yml" file.  This will allow you to tell Travis CI what to do.  
+``` 
+    .travis.yml 
+```
 
-### STEP 3: Inside your .travis.yml file, insert code
-Inside the file, insert the following code:
+### STEP 3: Inside your .travis.yml file, tell Travis CI what to do
+In the code below, we are doing two thing in the two lines code.  First, we are telling Travis CI to treat the project as a node project.  Second, ``` node_js: node ``` tells Travis CI to use the latest stable release for the test enviroment.
 ```JavaScript
     language: node_js
     node_js: node
 ```
-When you insert the code above, it tells Travis CI to treat the project as a node project.
-For example, ``` node_js: node ``` tells Travis CI to use the latest stable release for the test enviroment.
 
 ### STEP 4: Commit the .travis.yml file to version control
 When you eventually push the file to your existing repository (and assuming you have turned the corresponding repository on Travis CI to "on"), this will automatically
 trigger a *build* on Travis CI.
+```
+    
+```
 
 <br>
 
