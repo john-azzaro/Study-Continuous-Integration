@@ -1,8 +1,4 @@
 # Continuous Integration (CI) Study
-
-
-## Study Contents:
-
 * [What is the Continuous Integration Study?](#What-is-the-Continuous-Integration-Study)
 * [What is Continuous Integration (CI)?](#What-is-Continuous-Integration-(CI))
 * [What is Travis CI?](#What-is-Travis-CI)
@@ -12,14 +8,13 @@
 <br>
 
 ## What is the Continuous Integration Study?
-The continuous integration study is an examination of best practices associated with CI, as well as the use tools such as Travis.CI to use 
-in development workflow.
+The continuous integration study is an examination of best practices associated with CI, where you essentially work with a main shared repository that is continually updated.  Addiitonally, this study examines tools such as Travis.CI to use 
+in the development workflow.
 
 <br>
 
 ## What is Continuous Integration (CI)?
-**Continuous Integration**, or CI, is a development practice where developers integrate working copies of code to a central shared repository several
-times a day.  When each integration is submitted to this shared repository, it is verified by an automatic build.
+**Continuous Integration**, or CI, is a development practice where developers integrate working copies of code to a central shared repository several times a day.  When each integration is submitted to this shared repository, it is verified by an automatic build.
 
 CI is envaluable to developers in that it can:
 1. *Solve problems quickly by detecting and locating errors.*
@@ -50,7 +45,7 @@ Note that you can sign-in using your Github account.
 In your Travis.ci account, select the respository listed from your Github account.  There will be a switch next to the respository that you can turn on and off.
 Turn the respository on.
 ```
-    travis-ci.org/account/respositories
+    travis-ci.org/account/respositories   ==>  Turn ON
 ```
 
 ### STEP 2: Create a .travis.yml file
