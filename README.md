@@ -4,6 +4,7 @@
 * [What is Travis CI?](#What-is-Travis-CI)
 * [How do you use Travis CI?](#How-do-you-use-Travis-CI)
 * [What is Travis CLI?](#What-is-Travis-CLI)
+* [## How do you login and integrate with Heroku using Travis CLI?](#How-do-you-login-and-integrate-with-Heroku-using-Travis-CLI)
 
 <br>
 
