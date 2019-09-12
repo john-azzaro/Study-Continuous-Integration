@@ -33,6 +33,13 @@ Travis CI is a free hosted continuous integration platform that is used to build
 link to a repository, build, and test apps.  Although there are other CI tools, such as Jenkins (which will be covered in a future study), Travis CI is very easy to use 
 in conjunction with a Github account.
 
+| **Description:**                            | **Link:**                             |
+| ---------------------------------------- | ----------------------------------------------|
+|  Travis-ci.org               |  https://travis-ci.org/getting_started             |
+|  Travis CI documentation               |  https://docs.travis-ci.com             |
+|  Travis CI Github              |  https://github.com/travis-ci/travis.rb            |
+
+
 <br>
 
 ## How do you use Travis CI?
@@ -72,7 +79,14 @@ git push origin master
 <br>
 
 ## What is Travis CLI?
+Travis CLI will allow use to work with Heroku and allow you to run test automatically when you push changes to your master repository or merge a pull request into the master.  The
+way we have the following setup, TravisCI will deploy to Heroku if the tests pass.  If they do not, they will not deploy.
 
+<br>
+
+## How do you use Travis CLI?
+
+### STEP 0: Install Travis CI command line interface
 
 
 
