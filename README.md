@@ -89,9 +89,9 @@ way we have the following setup, TravisCI will deploy to Heroku if the tests pas
 ## How do you use Travis CLI?
 
 ### STEP 0: Install Travis CI command line interface
-To do this, you may need to install Rudy on your computer if you use windows because it does not come insalled on your machine.  To do this, simply visit the ruby website. You may or may not have Ruby installed, so check first to see if you have it.  Then in Gitbash install Ruby.  Note that when you install ruby in gitbash, you use the prfix "gem", which is the Ruby equivalent of NPM.
+To do this, you may need to install Rudy on your computer if you use windows because it does not come insalled on your machine.  To do this, simply visit the ruby website.  However, you may want to rin ``` ruby -v``` in gitbash to make sure you you have'nt installed it already. Then in Gitbash install Ruby.  Note that when you install ruby in gitbash, you use the prfix "gem", which is the Ruby equivalent of NPM.
 ```
-    ruby -v          // check for version of ruby installed
+    ruby -v                           // this checks for ruby version (if installed already)
 ```
 ```
     gem install travis
@@ -109,7 +109,25 @@ When you run this command in Gitbash, you will be prompted through a series of d
     travis setup heorku
 ```
 
-### STEP 3: 
+### STEP 3: Run "git diff" once to see if changes were made to ".travis.yml"
+After running ``` git diff ``` in command prompt, your ``` .travis.yml ``` file should be updated with additional information.
+```
+    git diff
+```
+```
+language: node_js
+node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: PyYsQR/TtD34567fghjkl34567sxzdcfvgbh34567sxdcfgh...
+  app: wonky-tundra-123456
+  on:
+    repo: john-azzaro/study-continuous-integration
+```
+
+### STEP 4: Create a Heroku app to deploy to
+Of course, you will need ot create a Heroku app
 
 
 
