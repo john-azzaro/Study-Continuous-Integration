@@ -89,6 +89,13 @@ way we have the following setup, TravisCI will deploy to Heroku if the tests pas
 ## How do you use Travis CLI?
 
 ### STEP 0: Install Travis CI command line interface
+To do this, you may need to install Rudy on your computer if you use windows because it does not come insalled on your machine.  To do this, simply visit the ruby website. You may or may not have Ruby installed, so check first to see if you have it.  Then in Gitbash install Ruby.  Note that when you install ruby in gitbash, you use the prfix "gem", which is the Ruby equivalent of NPM.
+```
+    ruby -v          // check for version of ruby installed
+```
+```
+    gem install travis
+```
 
 
 
