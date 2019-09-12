@@ -46,7 +46,9 @@ in conjunction with a Github account.
 
 ### STEP 0: Sign-up/Sign-in for Travis CI
 Note that you can sign-in using your Github account.
-
+```
+    https://travis-ci.org/getting_started
+```
 
 ### STEP 1: Select your repository and turn ON
 In your Travis.ci account, select the respository listed from your Github account.  There will be a switch next to the respository that you can turn on and off.
