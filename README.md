@@ -110,20 +110,20 @@ When you run this command in Gitbash, you will be prompted through a series of d
 ```
 
 ### STEP 3: Run "git diff" once to see if changes were made to ".travis.yml"
-After running ``` git diff ``` in command prompt, your ``` .travis.yml ``` file should be updated with additional information.
+After running ``` git diff ``` in command prompt, your ``` .travis.yml ``` file should be updated with additional information.  You will see something similar to the example below (note the key, app key and repo will be different).
 ```
     git diff
 ```
 ```
-language: node_js
-node_js: node
-deploy:
-  provider: heroku
-  api_key:
-    secure: PyYsQR/TtD34567fghjkl34567sxzdcfvgbh34567sxdcfgh...
-  app: wonky-tundra-123456
-  on:
-    repo: john-azzaro/study-continuous-integration
+    language: node_js
+    node_js: node
+    deploy:
+        provider: heroku
+        api_key:
+            secure: PyYsQR/TtD34567fghjkl34567sxzdcfvgbh34567sxdcfgh...
+        app: wonky-tundra-123456
+        on:
+            repo: john-azzaro/study-continuous-integration
 ```
 
 ### STEP 4: Create a Heroku app to deploy to
