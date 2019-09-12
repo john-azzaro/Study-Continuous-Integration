@@ -97,6 +97,20 @@ To do this, you may need to install Rudy on your computer if you use windows bec
     gem install travis
 ```
 
+### STEP 1: Using command line, in your project file login to travis
+Log into Travis with your Github credentials.  Please note that it would be better to use command prompt instead of Gitbash for the remaining steps to avoid any errors.
+```
+    travis login
+```
+
+### STEP 2: Setup Travis to deploy to Heroku
+When you run this command in Gitbash, you will be prompted through a series of defaults.  Just hit enter for each of these as the defaults are good for a standard project.
+```
+    travis setup heorku
+```
+
+### STEP 3: 
+
 
 
 
