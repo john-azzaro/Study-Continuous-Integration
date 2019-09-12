@@ -86,7 +86,7 @@ way we have the following setup, TravisCI will deploy to Heroku if the tests pas
 
 <br>
 
-## How do you use Travis CLI?
+## How do you login and integrate with Heroku using Travis CLI?
 
 ### STEP 0: Install Travis CI command line interface
 To do this, you may need to install Rudy on your computer if you use windows because it does not come insalled on your machine.  To do this, simply visit the ruby website.  However, you may want to rin ``` ruby -v``` in gitbash to make sure you you have'nt installed it already. Then in Gitbash install Ruby.  Note that when you install ruby in gitbash, you use the prfix "gem", which is the Ruby equivalent of NPM.
@@ -110,7 +110,11 @@ When you run this command in Gitbash, you will be prompted through a series of d
 ```
 
 ### STEP 3: Run "git diff" once to see if changes were made to ".travis.yml"
-After running ``` git diff ``` in command prompt, your ``` .travis.yml ``` file should be updated with additional information.  You will see something similar to the example below (note the key, app key and repo will be different).
+After running ``` git diff ``` in command prompt, your ``` .travis.yml ``` file should show a ```deploy``` block with the following properties:
+* **provider** which in this case is Heroku.
+* **api_key** with a **secure** property.
+* **app** which the name will need to be copied into in the next few steps.
+* **on:repo** denoting the github repository.
 ```
     git diff
 ```
@@ -121,13 +125,45 @@ After running ``` git diff ``` in command prompt, your ``` .travis.yml ``` file 
         provider: heroku
         api_key:
             secure: PyYsQR/TtD34567fghjkl34567sxzdcfvgbh34567sxdcfgh...
-        app: wonky-tundra-123456
+        app: 
         on:
             repo: john-azzaro/study-continuous-integration
 ```
 
 ### STEP 4: Create a Heroku app to deploy to
-Of course, you will need ot create a Heroku app
+Of course, you will need yo create a Heroku app to deploy to, so in command prompt write ``` heroku create ```.
+```
+    heroku create
+```
+
+### STEP 5:  Copy and paste the name of the Heroku name to deploy:app
+```
+    language: node_js
+    node_js: node
+    deploy:
+        provider: heroku
+        api_key:
+            secure: PyYsQR/TtD34567fghjkl34567sxzdcfvgbh34567sxdcfgh...
+        app: wonky-panda-23456
+        on:
+            repo: john-azzaro/study-continuous-integration
+```
+
+### STEP 6: Save, commit, and push to your master on Github
+```
+    git add .
+    git commit -m 'heroku integration'
+    git push origin master
+```
+If you need to reset:
+```
+    travis encrypt $(heroku auth:token) --add deploy.api_key
+```
+
+
+
+
+
 
 
 
