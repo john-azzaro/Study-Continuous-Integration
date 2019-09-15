@@ -1,4 +1,13 @@
 # Continuous Integration (CI) Study
+
+<br>
+
+## What is the Continuous Integration Study?
+The continuous integration study is an examination of best practices associated with CI, where you essentially work with a main shared repository that is continually updated.  Addiitonally, this study examines tools such as Travis.CI to use 
+in the development workflow.
+
+Here's an overview of what this study covers:
+
 * [What is the Continuous Integration Study?](#What-is-the-Continuous-Integration-Study)
 * [What is Continuous Integration (CI)?](#What-is-Continuous-Integration-(CI))
 * [What is Travis CI?](#What-is-Travis-CI)
@@ -8,9 +17,6 @@
 
 <br>
 
-## What is the Continuous Integration Study?
-The continuous integration study is an examination of best practices associated with CI, where you essentially work with a main shared repository that is continually updated.  Addiitonally, this study examines tools such as Travis.CI to use 
-in the development workflow.
 
 <br>
 
